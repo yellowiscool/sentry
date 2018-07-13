@@ -360,7 +360,7 @@ urlpatterns = patterns(
         name='sentry-api-0-organization-discover'
     ),
     url(
-        r'^organizations/(?P<organization_slug>[^\/]+)/health/(?P<page>users|releases)/$',
+        r'^organizations/(?P<organization_slug>[^\/]+)/health/$',
         OrganizationHealthEndpoint.as_view(),
         name='sentry-api-0-organization-health',
     ),
