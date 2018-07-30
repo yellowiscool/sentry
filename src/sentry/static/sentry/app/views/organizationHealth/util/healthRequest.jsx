@@ -21,9 +21,14 @@ class HealthRequestWithParams extends React.Component {
     api: PropTypes.object,
 
     /**
+     * Callback function to process category
+     */
+    getCategory: PropTypes.func,
+
+    /**
      * List of project ids to query
      */
-    projects: PropTypes.arrayOf(PropTypes.number),
+    projects: PropTypes.arrayOf(PropTypes.string),
 
     /**
      * List of environments to query
@@ -36,6 +41,13 @@ class HealthRequestWithParams extends React.Component {
      * e.g. 24h, 7d, 30d
      */
     period: PropTypes.string,
+
+    /**
+     * Interval to group results in
+     *
+     * e.g. 1d, 1h, 1m, 1s
+     */
+    interval: PropTypes.string,
 
     /**
      * Include data for previous period
@@ -57,6 +69,8 @@ class HealthRequestWithParams extends React.Component {
     period: '7d',
     includePrevious: true,
     timeseries: true,
+    interval: '1d',
+    getCategory: i => i,
   };
 
   constructor(props) {
@@ -85,13 +99,55 @@ class HealthRequestWithParams extends React.Component {
     });
   }
 
+  transformTimeseriesData = () => {
+    let {tag, getCategory} = this.props;
+    let {data} = this.state;
+    const categorySet = new Set();
+    const timestampMap = new Map();
+    data.forEach(([timestamp, resultsForTimestamp]) => {
+      if (!resultsForTimestamp.length) {
+        return;
+      }
+
+      resultsForTimestamp.forEach(({count, [tag]: name}) => {
+        categorySet.add(getCategory(name));
+        timestampMap.set(`${timestamp}-${getCategory(name)}`, count);
+      });
+    });
+
+    return Array.from(categorySet).map(seriesName => {
+      return {
+        seriesName,
+        data: data.map(([timestamp]) => {
+          return {
+            category: timestamp * 1000,
+            value: timestampMap.get(`${timestamp}-${seriesName}`) || 0,
+          };
+        }),
+      };
+    });
+  };
+
+  transformData = () => {
+    let {timeseries, tag} = this.props;
+    let {data} = this.state;
+    if (!data) return null;
+
+    return timeseries
+      ? this.transformTimeseriesData()
+      : data.map(({[tag]: name, count}) => [name, count]);
+  };
+
   render() {
     let {children} = this.props;
     let {data} = this.state;
+    console.log(this.props.tag, this.transformData(data));
+
     return children({
       // Loading if data is null
       loading: data === null,
-      data,
+      data: this.transformData(data),
+      originalData: data,
     });
   }
 }

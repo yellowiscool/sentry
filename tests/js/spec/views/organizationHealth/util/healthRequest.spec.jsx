@@ -28,7 +28,7 @@ describe('HealthRequest', function() {
   );
 
   it('makes requests', async function() {
-    expect(mock).toHaveBeenCalledWith({loading: true, data: null});
+    expect(mock).toHaveBeenCalledWith({loading: true, data: null, originalData: null});
 
     expect(mock).toHaveBeenLastCalledWith({
       loading: false,
@@ -41,11 +41,11 @@ describe('HealthRequest', function() {
   it('makes a new request if projects prop changes', async function() {
     doHealthRequest.mockClear();
 
-    wrapper.setProps({projects: [123]});
+    wrapper.setProps({projects: ['123']});
     expect(doHealthRequest).toHaveBeenCalledWith(
       expect.anything(),
       expect.objectContaining({
-        projects: [123],
+        projects: ['123'],
       })
     );
   });

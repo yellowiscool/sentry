@@ -117,7 +117,7 @@ export const TableChart = styled(
         ...props
       }) => {
         return (
-          <Flex flex={1} css={css}>
+          <Row>
             {items &&
               items.slice(0, dataStartIndex).map((rowHeaderValue, columnIndex) =>
                 renderCell({
@@ -156,7 +156,7 @@ export const TableChart = styled(
                   return renderCell(renderCellProps);
                 })}
             </DataGroup>
-          </Flex>
+          </Row>
         );
       };
 
@@ -389,4 +389,8 @@ export const Cell = styled(Box)`
 
 const DataGroup = styled(Flex)`
   flex-shrink: 0;
+`;
+const Row = styled(Flex)`
+  flex: 1;
+  overflow: hidden;
 `;
