@@ -2,6 +2,7 @@ from __future__ import absolute_import, print_function
 
 import logging
 
+from django.db.models import F
 from sentry.models import Organization, OrganizationMember, User
 from sentry.tasks.base import instrumented_task
 from sentry.auth import manager
@@ -22,7 +23,7 @@ def email_missing_links(org_id, actor_id, provider_key, **kwargs):
 
     member_list = OrganizationMember.objects.filter(
         organization=org,
-        flags=~getattr(OrganizationMember.flags, 'sso:linked'),
+        flags=F('flags').bitand(~getattr(OrganizationMember.flags, 'sso:linked')),
     )
     for member in member_list:
         member.send_sso_link_email(actor, provider)
