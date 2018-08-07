@@ -16,6 +16,14 @@ from sentry.db.models import (
 DEFAULT_EXPIRATION = timedelta(days=30)
 
 
+def default_expiration():
+    return timezone.now() + DEFAULT_EXPIRATION
+
+
+def generate_token():
+    return uuid4().hex + uuid4().hex
+
+
 class ApiToken(Model):
     __core__ = True
 
@@ -25,16 +33,16 @@ class ApiToken(Model):
     token = models.CharField(
         max_length=64,
         unique=True,
-        default=lambda: ApiToken.generate_token(),
+        default=generate_token,
     )
     refresh_token = models.CharField(
         max_length=64,
         unique=True,
         null=True,
-        default=lambda: ApiToken.generate_token(),
+        default=generate_token,
     )
     expires_at = models.DateTimeField(
-        null=True, default=lambda: timezone.now() + DEFAULT_EXPIRATION
+        null=True, default=default_expiration
     )
     scopes = BitField(flags=ApiScopes().to_bitfield())
     scope_list = ArrayField(of=models.TextField)
@@ -50,10 +58,6 @@ class ApiToken(Model):
 
     def __unicode__(self):
         return six.text_type(self.token)
-
-    @classmethod
-    def generate_token(cls):
-        return uuid4().hex + uuid4().hex
 
     @classmethod
     def from_grant(cls, grant):
@@ -93,7 +97,7 @@ class ApiToken(Model):
             expires_at = timezone.now() + DEFAULT_EXPIRATION
 
         self.update(
-            token=type(self).generate_token(),
-            refresh_token=type(self).generate_token(),
+            token=generate_token(),
+            refresh_token=generate_token(),
             expires_at=expires_at,
         )
