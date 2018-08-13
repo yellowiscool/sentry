@@ -478,6 +478,7 @@ exports[`ProjectEnvironments render active renders environment list and sets sta
                           size="xsmall"
                         >
                           <Button
+                            alignLabel="flex-start"
                             className="css-10adnmx-EnvironmentButton ezuela50"
                             disabled={false}
                             onClick={[Function]}
@@ -508,24 +509,28 @@ exports[`ProjectEnvironments render active renders environment list and sets sta
                                   size="xsmall"
                                 >
                                   <ButtonLabel
+                                    justify="flex-start"
                                     size="xsmall"
                                   >
                                     <Component
                                       className="css-6q5v1w-ButtonLabel e17811v31"
+                                      justify="flex-start"
                                       size="xsmall"
                                     >
                                       <Flex
                                         align="center"
                                         className="css-6q5v1w-ButtonLabel e17811v31"
+                                        justify="flex-start"
                                         size="xsmall"
                                       >
                                         <Base
                                           align="center"
-                                          className="e17811v31 css-dqr4rq-ButtonLabel"
+                                          className="e17811v31 css-v6dd0e-ButtonLabel"
+                                          justify="flex-start"
                                           size="xsmall"
                                         >
                                           <div
-                                            className="e17811v31 css-dqr4rq-ButtonLabel"
+                                            className="e17811v31 css-v6dd0e-ButtonLabel"
                                             is={null}
                                             size="xsmall"
                                           >
@@ -600,6 +605,7 @@ exports[`ProjectEnvironments render active renders environment list and sets sta
                           size="xsmall"
                         >
                           <Button
+                            alignLabel="flex-start"
                             className="css-10adnmx-EnvironmentButton ezuela50"
                             disabled={false}
                             onClick={[Function]}
@@ -630,24 +636,28 @@ exports[`ProjectEnvironments render active renders environment list and sets sta
                                   size="xsmall"
                                 >
                                   <ButtonLabel
+                                    justify="flex-start"
                                     size="xsmall"
                                   >
                                     <Component
                                       className="css-6q5v1w-ButtonLabel e17811v31"
+                                      justify="flex-start"
                                       size="xsmall"
                                     >
                                       <Flex
                                         align="center"
                                         className="css-6q5v1w-ButtonLabel e17811v31"
+                                        justify="flex-start"
                                         size="xsmall"
                                       >
                                         <Base
                                           align="center"
-                                          className="e17811v31 css-dqr4rq-ButtonLabel"
+                                          className="e17811v31 css-v6dd0e-ButtonLabel"
+                                          justify="flex-start"
                                           size="xsmall"
                                         >
                                           <div
-                                            className="e17811v31 css-dqr4rq-ButtonLabel"
+                                            className="e17811v31 css-v6dd0e-ButtonLabel"
                                             is={null}
                                             size="xsmall"
                                           >
@@ -667,6 +677,7 @@ exports[`ProjectEnvironments render active renders environment list and sets sta
                           size="xsmall"
                         >
                           <Button
+                            alignLabel="flex-start"
                             className="css-10adnmx-EnvironmentButton ezuela50"
                             disabled={false}
                             onClick={[Function]}
@@ -697,24 +708,28 @@ exports[`ProjectEnvironments render active renders environment list and sets sta
                                   size="xsmall"
                                 >
                                   <ButtonLabel
+                                    justify="flex-start"
                                     size="xsmall"
                                   >
                                     <Component
                                       className="css-6q5v1w-ButtonLabel e17811v31"
+                                      justify="flex-start"
                                       size="xsmall"
                                     >
                                       <Flex
                                         align="center"
                                         className="css-6q5v1w-ButtonLabel e17811v31"
+                                        justify="flex-start"
                                         size="xsmall"
                                       >
                                         <Base
                                           align="center"
-                                          className="e17811v31 css-dqr4rq-ButtonLabel"
+                                          className="e17811v31 css-v6dd0e-ButtonLabel"
+                                          justify="flex-start"
                                           size="xsmall"
                                         >
                                           <div
-                                            className="e17811v31 css-dqr4rq-ButtonLabel"
+                                            className="e17811v31 css-v6dd0e-ButtonLabel"
                                             is={null}
                                             size="xsmall"
                                           >
@@ -821,6 +836,7 @@ exports[`ProjectEnvironments render active renders environment list and sets sta
                           size="xsmall"
                         >
                           <Button
+                            alignLabel="flex-start"
                             className="css-10adnmx-EnvironmentButton ezuela50"
                             disabled={false}
                             onClick={[Function]}
@@ -851,24 +867,28 @@ exports[`ProjectEnvironments render active renders environment list and sets sta
                                   size="xsmall"
                                 >
                                   <ButtonLabel
+                                    justify="flex-start"
                                     size="xsmall"
                                   >
                                     <Component
                                       className="css-6q5v1w-ButtonLabel e17811v31"
+                                      justify="flex-start"
                                       size="xsmall"
                                     >
                                       <Flex
                                         align="center"
                                         className="css-6q5v1w-ButtonLabel e17811v31"
+                                        justify="flex-start"
                                         size="xsmall"
                                       >
                                         <Base
                                           align="center"
-                                          className="e17811v31 css-dqr4rq-ButtonLabel"
+                                          className="e17811v31 css-v6dd0e-ButtonLabel"
+                                          justify="flex-start"
                                           size="xsmall"
                                         >
                                           <div
-                                            className="e17811v31 css-dqr4rq-ButtonLabel"
+                                            className="e17811v31 css-v6dd0e-ButtonLabel"
                                             is={null}
                                             size="xsmall"
                                           >
@@ -1380,6 +1400,7 @@ exports[`ProjectEnvironments render hidden renders environment list 1`] = `
                           size="xsmall"
                         >
                           <Button
+                            alignLabel="flex-start"
                             className="css-10adnmx-EnvironmentButton ezuela50"
                             disabled={false}
                             onClick={[Function]}
@@ -1410,24 +1431,28 @@ exports[`ProjectEnvironments render hidden renders environment list 1`] = `
                                   size="xsmall"
                                 >
                                   <ButtonLabel
+                                    justify="flex-start"
                                     size="xsmall"
                                   >
                                     <Component
                                       className="css-6q5v1w-ButtonLabel e17811v31"
+                                      justify="flex-start"
                                       size="xsmall"
                                     >
                                       <Flex
                                         align="center"
                                         className="css-6q5v1w-ButtonLabel e17811v31"
+                                        justify="flex-start"
                                         size="xsmall"
                                       >
                                         <Base
                                           align="center"
-                                          className="e17811v31 css-dqr4rq-ButtonLabel"
+                                          className="e17811v31 css-v6dd0e-ButtonLabel"
+                                          justify="flex-start"
                                           size="xsmall"
                                         >
                                           <div
-                                            className="e17811v31 css-dqr4rq-ButtonLabel"
+                                            className="e17811v31 css-v6dd0e-ButtonLabel"
                                             is={null}
                                             size="xsmall"
                                           >

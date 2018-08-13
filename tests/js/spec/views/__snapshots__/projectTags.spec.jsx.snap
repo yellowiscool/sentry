@@ -229,6 +229,7 @@ exports[`ProjectTags renders 1`] = `
                                     title="Remove tag?"
                                   >
                                     <Button
+                                      alignLabel="flex-start"
                                       data-test-id="delete"
                                       disabled={false}
                                       icon="icon-trash"
@@ -258,24 +259,28 @@ exports[`ProjectTags renders 1`] = `
                                             size="xsmall"
                                           >
                                             <ButtonLabel
+                                              justify="flex-start"
                                               size="xsmall"
                                             >
                                               <Component
                                                 className="css-6q5v1w-ButtonLabel e17811v31"
+                                                justify="flex-start"
                                                 size="xsmall"
                                               >
                                                 <Flex
                                                   align="center"
                                                   className="css-6q5v1w-ButtonLabel e17811v31"
+                                                  justify="flex-start"
                                                   size="xsmall"
                                                 >
                                                   <Base
                                                     align="center"
-                                                    className="e17811v31 css-dqr4rq-ButtonLabel"
+                                                    className="e17811v31 css-v6dd0e-ButtonLabel"
+                                                    justify="flex-start"
                                                     size="xsmall"
                                                   >
                                                     <div
-                                                      className="e17811v31 css-dqr4rq-ButtonLabel"
+                                                      className="e17811v31 css-v6dd0e-ButtonLabel"
                                                       is={null}
                                                       size="xsmall"
                                                     >
@@ -475,6 +480,7 @@ exports[`ProjectTags renders 1`] = `
                                     title="Remove tag?"
                                   >
                                     <Button
+                                      alignLabel="flex-start"
                                       data-test-id="delete"
                                       disabled={false}
                                       icon="icon-trash"
@@ -504,24 +510,28 @@ exports[`ProjectTags renders 1`] = `
                                             size="xsmall"
                                           >
                                             <ButtonLabel
+                                              justify="flex-start"
                                               size="xsmall"
                                             >
                                               <Component
                                                 className="css-6q5v1w-ButtonLabel e17811v31"
+                                                justify="flex-start"
                                                 size="xsmall"
                                               >
                                                 <Flex
                                                   align="center"
                                                   className="css-6q5v1w-ButtonLabel e17811v31"
+                                                  justify="flex-start"
                                                   size="xsmall"
                                                 >
                                                   <Base
                                                     align="center"
-                                                    className="e17811v31 css-dqr4rq-ButtonLabel"
+                                                    className="e17811v31 css-v6dd0e-ButtonLabel"
+                                                    justify="flex-start"
                                                     size="xsmall"
                                                   >
                                                     <div
-                                                      className="e17811v31 css-dqr4rq-ButtonLabel"
+                                                      className="e17811v31 css-v6dd0e-ButtonLabel"
                                                       is={null}
                                                       size="xsmall"
                                                     >
@@ -721,6 +731,7 @@ exports[`ProjectTags renders 1`] = `
                                     title="Remove tag?"
                                   >
                                     <Button
+                                      alignLabel="flex-start"
                                       data-test-id="delete"
                                       disabled={false}
                                       icon="icon-trash"
@@ -750,24 +761,28 @@ exports[`ProjectTags renders 1`] = `
                                             size="xsmall"
                                           >
                                             <ButtonLabel
+                                              justify="flex-start"
                                               size="xsmall"
                                             >
                                               <Component
                                                 className="css-6q5v1w-ButtonLabel e17811v31"
+                                                justify="flex-start"
                                                 size="xsmall"
                                               >
                                                 <Flex
                                                   align="center"
                                                   className="css-6q5v1w-ButtonLabel e17811v31"
+                                                  justify="flex-start"
                                                   size="xsmall"
                                                 >
                                                   <Base
                                                     align="center"
-                                                    className="e17811v31 css-dqr4rq-ButtonLabel"
+                                                    className="e17811v31 css-v6dd0e-ButtonLabel"
+                                                    justify="flex-start"
                                                     size="xsmall"
                                                   >
                                                     <div
-                                                      className="e17811v31 css-dqr4rq-ButtonLabel"
+                                                      className="e17811v31 css-v6dd0e-ButtonLabel"
                                                       is={null}
                                                       size="xsmall"
                                                     >
@@ -975,6 +990,7 @@ exports[`ProjectTags renders 1`] = `
                                         title="Remove tag?"
                                       >
                                         <Button
+                                          alignLabel="flex-start"
                                           data-test-id="delete"
                                           disabled={false}
                                           icon="icon-trash"
@@ -1004,24 +1020,28 @@ exports[`ProjectTags renders 1`] = `
                                                 size="xsmall"
                                               >
                                                 <ButtonLabel
+                                                  justify="flex-start"
                                                   size="xsmall"
                                                 >
                                                   <Component
                                                     className="css-6q5v1w-ButtonLabel e17811v31"
+                                                    justify="flex-start"
                                                     size="xsmall"
                                                   >
                                                     <Flex
                                                       align="center"
                                                       className="css-6q5v1w-ButtonLabel e17811v31"
+                                                      justify="flex-start"
                                                       size="xsmall"
                                                     >
                                                       <Base
                                                         align="center"
-                                                        className="e17811v31 css-dqr4rq-ButtonLabel"
+                                                        className="e17811v31 css-v6dd0e-ButtonLabel"
+                                                        justify="flex-start"
                                                         size="xsmall"
                                                       >
                                                         <div
-                                                          className="e17811v31 css-dqr4rq-ButtonLabel"
+                                                          className="e17811v31 css-v6dd0e-ButtonLabel"
                                                           is={null}
                                                           size="xsmall"
                                                         >

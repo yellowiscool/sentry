@@ -392,6 +392,7 @@ exports[`Issues -> Merged View renders with mocked data 1`] = `
                           </Confirm>
                         </LinkWithConfirmation>
                         <Button
+                          alignLabel="flex-start"
                           disabled={true}
                           onClick={[Function]}
                           size="small"
@@ -446,24 +447,28 @@ exports[`Issues -> Merged View renders with mocked data 1`] = `
                                 to={null}
                               >
                                 <ButtonLabel
+                                  justify="flex-start"
                                   size="small"
                                 >
                                   <Component
                                     className="css-19bmqb3-ButtonLabel e17811v31"
+                                    justify="flex-start"
                                     size="small"
                                   >
                                     <Flex
                                       align="center"
                                       className="css-19bmqb3-ButtonLabel e17811v31"
+                                      justify="flex-start"
                                       size="small"
                                     >
                                       <Base
                                         align="center"
-                                        className="e17811v31 css-1eblpyp-ButtonLabel"
+                                        className="e17811v31 css-1pb9bp-ButtonLabel"
+                                        justify="flex-start"
                                         size="small"
                                       >
                                         <div
-                                          className="e17811v31 css-1eblpyp-ButtonLabel"
+                                          className="e17811v31 css-1pb9bp-ButtonLabel"
                                           is={null}
                                           size="small"
                                         >
@@ -489,6 +494,7 @@ exports[`Issues -> Merged View renders with mocked data 1`] = `
                     >
                       <div>
                         <Button
+                          alignLabel="flex-start"
                           className="toggle-collapse-all"
                           disabled={false}
                           onClick={[Function]}
@@ -519,24 +525,28 @@ exports[`Issues -> Merged View renders with mocked data 1`] = `
                                 size="small"
                               >
                                 <ButtonLabel
+                                  justify="flex-start"
                                   size="small"
                                 >
                                   <Component
                                     className="css-19bmqb3-ButtonLabel e17811v31"
+                                    justify="flex-start"
                                     size="small"
                                   >
                                     <Flex
                                       align="center"
                                       className="css-19bmqb3-ButtonLabel e17811v31"
+                                      justify="flex-start"
                                       size="small"
                                     >
                                       <Base
                                         align="center"
-                                        className="e17811v31 css-1eblpyp-ButtonLabel"
+                                        className="e17811v31 css-1pb9bp-ButtonLabel"
+                                        justify="flex-start"
                                         size="small"
                                       >
                                         <div
-                                          className="e17811v31 css-1eblpyp-ButtonLabel"
+                                          className="e17811v31 css-1pb9bp-ButtonLabel"
                                           is={null}
                                           size="small"
                                         >
@@ -1857,6 +1867,7 @@ exports[`Issues -> Merged View renders with mocked data 2`] = `
                           </Confirm>
                         </LinkWithConfirmation>
                         <Button
+                          alignLabel="flex-start"
                           disabled={true}
                           onClick={[Function]}
                           size="small"
@@ -1911,24 +1922,28 @@ exports[`Issues -> Merged View renders with mocked data 2`] = `
                                 to={null}
                               >
                                 <ButtonLabel
+                                  justify="flex-start"
                                   size="small"
                                 >
                                   <Component
                                     className="css-19bmqb3-ButtonLabel e17811v31"
+                                    justify="flex-start"
                                     size="small"
                                   >
                                     <Flex
                                       align="center"
                                       className="css-19bmqb3-ButtonLabel e17811v31"
+                                      justify="flex-start"
                                       size="small"
                                     >
                                       <Base
                                         align="center"
-                                        className="e17811v31 css-1eblpyp-ButtonLabel"
+                                        className="e17811v31 css-1pb9bp-ButtonLabel"
+                                        justify="flex-start"
                                         size="small"
                                       >
                                         <div
-                                          className="e17811v31 css-1eblpyp-ButtonLabel"
+                                          className="e17811v31 css-1pb9bp-ButtonLabel"
                                           is={null}
                                           size="small"
                                         >
@@ -1954,6 +1969,7 @@ exports[`Issues -> Merged View renders with mocked data 2`] = `
                     >
                       <div>
                         <Button
+                          alignLabel="flex-start"
                           className="toggle-collapse-all"
                           disabled={false}
                           onClick={[Function]}
@@ -1984,24 +2000,28 @@ exports[`Issues -> Merged View renders with mocked data 2`] = `
                                 size="small"
                               >
                                 <ButtonLabel
+                                  justify="flex-start"
                                   size="small"
                                 >
                                   <Component
                                     className="css-19bmqb3-ButtonLabel e17811v31"
+                                    justify="flex-start"
                                     size="small"
                                   >
                                     <Flex
                                       align="center"
                                       className="css-19bmqb3-ButtonLabel e17811v31"
+                                      justify="flex-start"
                                       size="small"
                                     >
                                       <Base
                                         align="center"
-                                        className="e17811v31 css-1eblpyp-ButtonLabel"
+                                        className="e17811v31 css-1pb9bp-ButtonLabel"
+                                        justify="flex-start"
                                         size="small"
                                       >
                                         <div
-                                          className="e17811v31 css-1eblpyp-ButtonLabel"
+                                          className="e17811v31 css-1pb9bp-ButtonLabel"
                                           is={null}
                                           size="small"
                                         >

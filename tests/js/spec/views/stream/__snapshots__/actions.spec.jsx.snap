@@ -144,6 +144,7 @@ exports[`StreamActions Bulk Total results < bulk limit bulk resolves 1`] = `
           className="modal-footer"
         >
           <Button
+            alignLabel="flex-start"
             disabled={false}
             onClick={[Function]}
             style={
@@ -187,20 +188,25 @@ exports[`StreamActions Bulk Total results < bulk limit bulk resolves 1`] = `
                     }
                   }
                 >
-                  <ButtonLabel>
+                  <ButtonLabel
+                    justify="flex-start"
+                  >
                     <Component
                       className="css-1dxlw1i-ButtonLabel e17811v31"
+                      justify="flex-start"
                     >
                       <Flex
                         align="center"
                         className="css-1dxlw1i-ButtonLabel e17811v31"
+                        justify="flex-start"
                       >
                         <Base
                           align="center"
-                          className="e17811v31 css-mvnt76-ButtonLabel"
+                          className="e17811v31 css-16q3v0q-ButtonLabel"
+                          justify="flex-start"
                         >
                           <div
-                            className="e17811v31 css-mvnt76-ButtonLabel"
+                            className="e17811v31 css-16q3v0q-ButtonLabel"
                             is={null}
                           >
                             Cancel
@@ -214,6 +220,7 @@ exports[`StreamActions Bulk Total results < bulk limit bulk resolves 1`] = `
             </StyledButton>
           </Button>
           <Button
+            alignLabel="flex-start"
             autoFocus={true}
             data-test-id="confirm-modal"
             disabled={false}
@@ -249,20 +256,25 @@ exports[`StreamActions Bulk Total results < bulk limit bulk resolves 1`] = `
                   priority="primary"
                   role="button"
                 >
-                  <ButtonLabel>
+                  <ButtonLabel
+                    justify="flex-start"
+                  >
                     <Component
                       className="css-1dxlw1i-ButtonLabel e17811v31"
+                      justify="flex-start"
                     >
                       <Flex
                         align="center"
                         className="css-1dxlw1i-ButtonLabel e17811v31"
+                        justify="flex-start"
                       >
                         <Base
                           align="center"
-                          className="e17811v31 css-mvnt76-ButtonLabel"
+                          className="e17811v31 css-16q3v0q-ButtonLabel"
+                          justify="flex-start"
                         >
                           <div
-                            className="e17811v31 css-mvnt76-ButtonLabel"
+                            className="e17811v31 css-16q3v0q-ButtonLabel"
                             is={null}
                           >
                             Bulk resolve issues
@@ -458,6 +470,7 @@ exports[`StreamActions Bulk Total results > bulk limit bulk resolves 1`] = `
           className="modal-footer"
         >
           <Button
+            alignLabel="flex-start"
             disabled={false}
             onClick={[Function]}
             style={
@@ -501,20 +514,25 @@ exports[`StreamActions Bulk Total results > bulk limit bulk resolves 1`] = `
                     }
                   }
                 >
-                  <ButtonLabel>
+                  <ButtonLabel
+                    justify="flex-start"
+                  >
                     <Component
                       className="css-1dxlw1i-ButtonLabel e17811v31"
+                      justify="flex-start"
                     >
                       <Flex
                         align="center"
                         className="css-1dxlw1i-ButtonLabel e17811v31"
+                        justify="flex-start"
                       >
                         <Base
                           align="center"
-                          className="e17811v31 css-mvnt76-ButtonLabel"
+                          className="e17811v31 css-16q3v0q-ButtonLabel"
+                          justify="flex-start"
                         >
                           <div
-                            className="e17811v31 css-mvnt76-ButtonLabel"
+                            className="e17811v31 css-16q3v0q-ButtonLabel"
                             is={null}
                           >
                             Cancel
@@ -528,6 +546,7 @@ exports[`StreamActions Bulk Total results > bulk limit bulk resolves 1`] = `
             </StyledButton>
           </Button>
           <Button
+            alignLabel="flex-start"
             autoFocus={true}
             data-test-id="confirm-modal"
             disabled={false}
@@ -563,20 +582,25 @@ exports[`StreamActions Bulk Total results > bulk limit bulk resolves 1`] = `
                   priority="primary"
                   role="button"
                 >
-                  <ButtonLabel>
+                  <ButtonLabel
+                    justify="flex-start"
+                  >
                     <Component
                       className="css-1dxlw1i-ButtonLabel e17811v31"
+                      justify="flex-start"
                     >
                       <Flex
                         align="center"
                         className="css-1dxlw1i-ButtonLabel e17811v31"
+                        justify="flex-start"
                       >
                         <Base
                           align="center"
-                          className="e17811v31 css-mvnt76-ButtonLabel"
+                          className="e17811v31 css-16q3v0q-ButtonLabel"
+                          justify="flex-start"
                         >
                           <div
-                            className="e17811v31 css-mvnt76-ButtonLabel"
+                            className="e17811v31 css-16q3v0q-ButtonLabel"
                             is={null}
                           >
                             Bulk resolve issues

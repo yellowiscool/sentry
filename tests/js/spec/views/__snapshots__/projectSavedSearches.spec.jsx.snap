@@ -353,6 +353,7 @@ exports[`ProjectSavedSearches renders 1`] = `
                                           priority="primary"
                                         >
                                           <Button
+                                            alignLabel="flex-start"
                                             disabled={false}
                                             icon="icon-trash"
                                             onClick={[Function]}
@@ -379,24 +380,28 @@ exports[`ProjectSavedSearches renders 1`] = `
                                                   size="small"
                                                 >
                                                   <ButtonLabel
+                                                    justify="flex-start"
                                                     size="small"
                                                   >
                                                     <Component
                                                       className="css-19bmqb3-ButtonLabel e17811v31"
+                                                      justify="flex-start"
                                                       size="small"
                                                     >
                                                       <Flex
                                                         align="center"
                                                         className="css-19bmqb3-ButtonLabel e17811v31"
+                                                        justify="flex-start"
                                                         size="small"
                                                       >
                                                         <Base
                                                           align="center"
-                                                          className="e17811v31 css-1eblpyp-ButtonLabel"
+                                                          className="e17811v31 css-1pb9bp-ButtonLabel"
+                                                          justify="flex-start"
                                                           size="small"
                                                         >
                                                           <div
-                                                            className="e17811v31 css-1eblpyp-ButtonLabel"
+                                                            className="e17811v31 css-1pb9bp-ButtonLabel"
                                                             is={null}
                                                             size="small"
                                                           >
@@ -687,6 +692,7 @@ exports[`ProjectSavedSearches renders 1`] = `
                                           priority="primary"
                                         >
                                           <Button
+                                            alignLabel="flex-start"
                                             disabled={false}
                                             icon="icon-trash"
                                             onClick={[Function]}
@@ -713,24 +719,28 @@ exports[`ProjectSavedSearches renders 1`] = `
                                                   size="small"
                                                 >
                                                   <ButtonLabel
+                                                    justify="flex-start"
                                                     size="small"
                                                   >
                                                     <Component
                                                       className="css-19bmqb3-ButtonLabel e17811v31"
+                                                      justify="flex-start"
                                                       size="small"
                                                     >
                                                       <Flex
                                                         align="center"
                                                         className="css-19bmqb3-ButtonLabel e17811v31"
+                                                        justify="flex-start"
                                                         size="small"
                                                       >
                                                         <Base
                                                           align="center"
-                                                          className="e17811v31 css-1eblpyp-ButtonLabel"
+                                                          className="e17811v31 css-1pb9bp-ButtonLabel"
+                                                          justify="flex-start"
                                                           size="small"
                                                         >
                                                           <div
-                                                            className="e17811v31 css-1eblpyp-ButtonLabel"
+                                                            className="e17811v31 css-1pb9bp-ButtonLabel"
                                                             is={null}
                                                             size="small"
                                                           >

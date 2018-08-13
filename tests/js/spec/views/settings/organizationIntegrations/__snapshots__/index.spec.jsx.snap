@@ -745,6 +745,7 @@ exports[`OrganizationIntegrations render() with installed integrations Displays 
                                 is={null}
                               >
                                 <Button
+                                  alignLabel="flex-start"
                                   disabled={false}
                                   icon="icon-circle-add"
                                   onClick={[Function]}
@@ -774,24 +775,28 @@ exports[`OrganizationIntegrations render() with installed integrations Displays 
                                         size="small"
                                       >
                                         <ButtonLabel
+                                          justify="flex-start"
                                           size="small"
                                         >
                                           <Component
                                             className="css-19bmqb3-ButtonLabel e17811v31"
+                                            justify="flex-start"
                                             size="small"
                                           >
                                             <Flex
                                               align="center"
                                               className="css-19bmqb3-ButtonLabel e17811v31"
+                                              justify="flex-start"
                                               size="small"
                                             >
                                               <Base
                                                 align="center"
-                                                className="e17811v31 css-1eblpyp-ButtonLabel"
+                                                className="e17811v31 css-1pb9bp-ButtonLabel"
+                                                justify="flex-start"
                                                 size="small"
                                               >
                                                 <div
-                                                  className="e17811v31 css-1eblpyp-ButtonLabel"
+                                                  className="e17811v31 css-1pb9bp-ButtonLabel"
                                                   is={null}
                                                   size="small"
                                                 >
@@ -1464,6 +1469,7 @@ exports[`OrganizationIntegrations render() with installed integrations Displays 
                                 is={null}
                               >
                                 <Button
+                                  alignLabel="flex-start"
                                   disabled={false}
                                   icon="icon-circle-add"
                                   onClick={[Function]}
@@ -1493,24 +1499,28 @@ exports[`OrganizationIntegrations render() with installed integrations Displays 
                                         size="small"
                                       >
                                         <ButtonLabel
+                                          justify="flex-start"
                                           size="small"
                                         >
                                           <Component
                                             className="css-19bmqb3-ButtonLabel e17811v31"
+                                            justify="flex-start"
                                             size="small"
                                           >
                                             <Flex
                                               align="center"
                                               className="css-19bmqb3-ButtonLabel e17811v31"
+                                              justify="flex-start"
                                               size="small"
                                             >
                                               <Base
                                                 align="center"
-                                                className="e17811v31 css-1eblpyp-ButtonLabel"
+                                                className="e17811v31 css-1pb9bp-ButtonLabel"
+                                                justify="flex-start"
                                                 size="small"
                                               >
                                                 <div
-                                                  className="e17811v31 css-1eblpyp-ButtonLabel"
+                                                  className="e17811v31 css-1pb9bp-ButtonLabel"
                                                   is={null}
                                                   size="small"
                                                 >
@@ -1965,6 +1975,7 @@ exports[`OrganizationIntegrations render() with installed integrations Displays 
                                         priority="danger"
                                       >
                                         <Button
+                                          alignLabel="flex-start"
                                           borderless={true}
                                           disabled={false}
                                           icon="icon-trash"
@@ -1997,24 +2008,28 @@ exports[`OrganizationIntegrations render() with installed integrations Displays 
                                                 size="xsmall"
                                               >
                                                 <ButtonLabel
+                                                  justify="flex-start"
                                                   size="xsmall"
                                                 >
                                                   <Component
                                                     className="css-6q5v1w-ButtonLabel e17811v31"
+                                                    justify="flex-start"
                                                     size="xsmall"
                                                   >
                                                     <Flex
                                                       align="center"
                                                       className="css-6q5v1w-ButtonLabel e17811v31"
+                                                      justify="flex-start"
                                                       size="xsmall"
                                                     >
                                                       <Base
                                                         align="center"
-                                                        className="e17811v31 css-dqr4rq-ButtonLabel"
+                                                        className="e17811v31 css-v6dd0e-ButtonLabel"
+                                                        justify="flex-start"
                                                         size="xsmall"
                                                       >
                                                         <div
-                                                          className="e17811v31 css-dqr4rq-ButtonLabel"
+                                                          className="e17811v31 css-v6dd0e-ButtonLabel"
                                                           is={null}
                                                           size="xsmall"
                                                         >
@@ -2887,6 +2902,7 @@ exports[`OrganizationIntegrations render() without integrations Displays integra
                                 is={null}
                               >
                                 <Button
+                                  alignLabel="flex-start"
                                   disabled={false}
                                   icon="icon-circle-add"
                                   onClick={[Function]}
@@ -2916,24 +2932,28 @@ exports[`OrganizationIntegrations render() without integrations Displays integra
                                         size="small"
                                       >
                                         <ButtonLabel
+                                          justify="flex-start"
                                           size="small"
                                         >
                                           <Component
                                             className="css-19bmqb3-ButtonLabel e17811v31"
+                                            justify="flex-start"
                                             size="small"
                                           >
                                             <Flex
                                               align="center"
                                               className="css-19bmqb3-ButtonLabel e17811v31"
+                                              justify="flex-start"
                                               size="small"
                                             >
                                               <Base
                                                 align="center"
-                                                className="e17811v31 css-1eblpyp-ButtonLabel"
+                                                className="e17811v31 css-1pb9bp-ButtonLabel"
+                                                justify="flex-start"
                                                 size="small"
                                               >
                                                 <div
-                                                  className="e17811v31 css-1eblpyp-ButtonLabel"
+                                                  className="e17811v31 css-1pb9bp-ButtonLabel"
                                                   is={null}
                                                   size="small"
                                                 >
@@ -3572,6 +3592,7 @@ exports[`OrganizationIntegrations render() without integrations Displays integra
                                 is={null}
                               >
                                 <Button
+                                  alignLabel="flex-start"
                                   disabled={false}
                                   icon="icon-circle-add"
                                   onClick={[Function]}
@@ -3601,24 +3622,28 @@ exports[`OrganizationIntegrations render() without integrations Displays integra
                                         size="small"
                                       >
                                         <ButtonLabel
+                                          justify="flex-start"
                                           size="small"
                                         >
                                           <Component
                                             className="css-19bmqb3-ButtonLabel e17811v31"
+                                            justify="flex-start"
                                             size="small"
                                           >
                                             <Flex
                                               align="center"
                                               className="css-19bmqb3-ButtonLabel e17811v31"
+                                              justify="flex-start"
                                               size="small"
                                             >
                                               <Base
                                                 align="center"
-                                                className="e17811v31 css-1eblpyp-ButtonLabel"
+                                                className="e17811v31 css-1pb9bp-ButtonLabel"
+                                                justify="flex-start"
                                                 size="small"
                                               >
                                                 <div
-                                                  className="e17811v31 css-1eblpyp-ButtonLabel"
+                                                  className="e17811v31 css-1pb9bp-ButtonLabel"
                                                   is={null}
                                                   size="small"
                                                 >

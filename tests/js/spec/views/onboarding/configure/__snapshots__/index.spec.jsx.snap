@@ -251,6 +251,7 @@ exports[`Configure should render correctly render() should render platform docs 
                                       >
                                         Configure node
                                         <Button
+                                          alignLabel="flex-start"
                                           disabled={false}
                                           external={true}
                                           href="https://docs.getsentry.com/hosted/clients/csharp/"
@@ -298,24 +299,28 @@ exports[`Configure should render correctly render() should render platform docs 
                                                   target="_blank"
                                                 >
                                                   <ButtonLabel
+                                                    justify="flex-start"
                                                     size="small"
                                                   >
                                                     <Component
                                                       className="css-19bmqb3-ButtonLabel e17811v31"
+                                                      justify="flex-start"
                                                       size="small"
                                                     >
                                                       <Flex
                                                         align="center"
                                                         className="css-19bmqb3-ButtonLabel e17811v31"
+                                                        justify="flex-start"
                                                         size="small"
                                                       >
                                                         <Base
                                                           align="center"
-                                                          className="e17811v31 css-1eblpyp-ButtonLabel"
+                                                          className="e17811v31 css-1pb9bp-ButtonLabel"
+                                                          justify="flex-start"
                                                           size="small"
                                                         >
                                                           <div
-                                                            className="e17811v31 css-1eblpyp-ButtonLabel"
+                                                            className="e17811v31 css-1pb9bp-ButtonLabel"
                                                             is={null}
                                                             size="small"
                                                           >
