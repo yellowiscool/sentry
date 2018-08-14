@@ -186,34 +186,6 @@ const OrganizationHealthErrors = styled(
               }}
             </HealthRequest>
           </Flex>
-
-          <Flex>
-            <HealthRequest tag="browser.name" timeseries={false}>
-              {({data, loading}) => {
-                if (!data) return null;
-                return (
-                  <StyledPanelChart
-                    height={200}
-                    series={[
-                      {
-                        seriesName: t('Browsers'),
-                        data: data.map(([name, value]) => ({name, value})),
-                      },
-                    ]}
-                    title={t('Browsers')}
-                  >
-                    {({series}) => (
-                      <Flex>
-                        <PieChartWrapper>
-                          <PieChart height={300} series={series} />
-                        </PieChartWrapper>
-                      </Flex>
-                    )}
-                  </StyledPanelChart>
-                );
-              }}
-            </HealthRequest>
-          </Flex>
         </div>
       );
     }
