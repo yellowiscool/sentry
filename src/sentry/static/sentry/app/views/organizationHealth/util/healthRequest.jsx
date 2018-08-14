@@ -12,18 +12,16 @@ import HealthContext from './healthContext';
 class HealthRequestWithParams extends React.Component {
   static propTypes = {
     /**
-     * Health tag (this will use a BASE_URL defined in health actionCreators
+     * API client instance
      */
-    tag: PropTypes.string.isRequired,
+    api: PropTypes.object,
 
     organization: SentryTypes.Organization.isRequired,
 
-    api: PropTypes.object,
-
     /**
-     * Callback function to process category
+     * Health tag (this will use a BASE_URL defined in health actionCreators
      */
-    getCategory: PropTypes.func,
+    tag: PropTypes.string.isRequired,
 
     /**
      * List of project ids to query
@@ -63,6 +61,11 @@ class HealthRequestWithParams extends React.Component {
      * topK value
      */
     topk: PropTypes.number,
+
+    /**
+     * Callback function to process category
+     */
+    getCategory: PropTypes.func,
   };
 
   static defaultProps = {
@@ -102,8 +105,10 @@ class HealthRequestWithParams extends React.Component {
   transformTimeseriesData = () => {
     let {tag, getCategory} = this.props;
     let {data} = this.state;
+
     const categorySet = new Set();
     const timestampMap = new Map();
+
     data.forEach(([timestamp, resultsForTimestamp]) => {
       if (!resultsForTimestamp.length) {
         return;
@@ -141,7 +146,6 @@ class HealthRequestWithParams extends React.Component {
   render() {
     let {children} = this.props;
     let {data} = this.state;
-    console.log(this.props.tag, this.transformData(data));
 
     return children({
       // Loading if data is null
