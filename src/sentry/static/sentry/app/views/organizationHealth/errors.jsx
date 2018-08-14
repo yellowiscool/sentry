@@ -44,7 +44,6 @@ const OrganizationHealthErrors = styled(
             >
               {({data, loading}) => {
                 if (!data) return null;
-                console.log('handled', data);
                 return (
                   <StyledPanelChart height={200} title={t('Errors')} series={data}>
                     {props => <AreaChart {...props} />}
@@ -164,18 +163,23 @@ const OrganizationHealthErrors = styled(
                           height={300}
                           title={t('Errors By Release')}
                           showLegend={false}
-                          data={data.map(row => ({
-                            name: row.release.version,
-                            value: row.count,
-                          }))}
+                          series={[
+                            {
+                              seriesName: t('Errors By Release'),
+                              data: data.map(row => ({
+                                name: row.release.version,
+                                value: row.count,
+                              })),
+                            },
+                          ]}
                         >
-                          {({data: panelData}) => (
+                          {({series}) => (
                             <Flex>
                               <LegendWrapper>
-                                <Legend data={panelData} />
+                                <Legend series={series} />
                               </LegendWrapper>
                               <PieChartWrapper>
-                                <PieChart height={300} data={panelData} />
+                                <PieChart height={300} series={series} />
                               </PieChartWrapper>
                             </Flex>
                           )}
@@ -195,16 +199,21 @@ const OrganizationHealthErrors = styled(
                 return (
                   <StyledPanelChart
                     height={200}
-                    data={data.map(([name, value]) => ({name, value}))}
+                    series={[
+                      {
+                        seriesName: t('Browsers'),
+                        data: data.map(([name, value]) => ({name, value})),
+                      },
+                    ]}
                     title={t('Browsers')}
                   >
-                    {({data: panelData}) => (
+                    {({series}) => (
                       <Flex>
                         <LegendWrapper>
-                          <Legend data={panelData} />
+                          <Legend series={series} />
                         </LegendWrapper>
                         <PieChartWrapper>
-                          <PieChart height={300} data={panelData} />
+                          <PieChart height={300} series={series} />
                         </PieChartWrapper>
                       </Flex>
                     )}
@@ -295,21 +304,24 @@ const Project = styled(Box)`
 `;
 class Legend extends React.Component {
   static propTypes = {
-    data: PropTypes.array,
+    series: PropTypes.array,
   };
 
   render() {
-    let {data} = this.props;
+    let {series} = this.props;
+    if (!series) return null;
+    const [firstSeries] = series;
+
     return (
       <Flex direction="column">
-        {data.map((item, i) => {
+        {firstSeries.data.map(({name}, i) => {
           return (
             <LegendRow key={i}>
               <Square
                 size={16}
                 color={theme.charts.colors[i % theme.charts.colors.length]}
               />
-              <ReleaseName>{item.name}</ReleaseName>
+              <ReleaseName>{name}</ReleaseName>
             </LegendRow>
           );
         })}
