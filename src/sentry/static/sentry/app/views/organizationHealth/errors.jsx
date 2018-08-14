@@ -1,5 +1,4 @@
 import {Box, Flex} from 'grid-emotion';
-import PropTypes from 'prop-types';
 import React from 'react';
 import styled from 'react-emotion';
 
@@ -13,7 +12,6 @@ import PanelChart from 'app/components/charts/panelChart';
 import PieChart from 'app/components/charts/pieChart';
 import overflowEllipsis from 'app/styles/overflowEllipsis';
 import space from 'app/styles/space';
-import theme from 'app/utils/theme';
 import withApi from 'app/utils/withApi';
 import withLatestContext from 'app/utils/withLatestContext';
 
@@ -175,9 +173,6 @@ const OrganizationHealthErrors = styled(
                         >
                           {({series}) => (
                             <Flex>
-                              <LegendWrapper>
-                                <Legend series={series} />
-                              </LegendWrapper>
                               <PieChartWrapper>
                                 <PieChart height={300} series={series} />
                               </PieChartWrapper>
@@ -209,9 +204,6 @@ const OrganizationHealthErrors = styled(
                   >
                     {({series}) => (
                       <Flex>
-                        <LegendWrapper>
-                          <Legend series={series} />
-                        </LegendWrapper>
                         <PieChartWrapper>
                           <PieChart height={300} series={series} />
                         </PieChartWrapper>
@@ -232,12 +224,6 @@ const PieChartWrapper = styled(Box)`
   flex: 1;
   flex-shrink: 0;
 `;
-const LegendWrapper = styled(Box)`
-  flex: 1;
-  padding: ${space(2)};
-  overflow: hidden;
-`;
-
 class OrganizationHealthErrorsContainer extends React.Component {
   render() {
     // Destructure props from `withLatestContext`
@@ -301,45 +287,4 @@ const ReleaseName = styled(Box)`
 const Project = styled(Box)`
   margin-left: ${space(1)};
   flex-shrink: 0;
-`;
-class Legend extends React.Component {
-  static propTypes = {
-    series: PropTypes.array,
-  };
-
-  render() {
-    let {series} = this.props;
-    if (!series) return null;
-    const [firstSeries] = series;
-
-    return (
-      <Flex direction="column">
-        {firstSeries.data.map(({name}, i) => {
-          return (
-            <LegendRow key={i}>
-              <Square
-                size={16}
-                color={theme.charts.colors[i % theme.charts.colors.length]}
-              />
-              <ReleaseName>{name}</ReleaseName>
-            </LegendRow>
-          );
-        })}
-      </Flex>
-    );
-  }
-}
-
-const Square = styled('div')`
-  width: ${p => p.size}px;
-  height: ${p => p.size}px;
-  border-radius: ${p => p.theme.borderRadius};
-  background-color: ${p => p.color};
-  margin-right: ${space(1)};
-  flex-shrink: 0;
-`;
-
-const LegendRow = styled(Flex)`
-  margin: ${space(1)};
-  align-items: center;
 `;
