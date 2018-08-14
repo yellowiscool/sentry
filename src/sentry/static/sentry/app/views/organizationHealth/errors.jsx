@@ -141,7 +141,7 @@ const OrganizationHealthErrors = styled(
                           renderHeaderCell={({getValue, value, columnIndex}) => {
                             return (
                               <Flex justify="space-between">
-                                <ReleaseName>{value.release.version}</ReleaseName>
+                                <ReleaseName>{value.release.shortVersion}</ReleaseName>
                                 <Project>
                                   {value.topProjects.map(p => (
                                     <IdBadge key={p.slug} project={p} />
@@ -165,7 +165,7 @@ const OrganizationHealthErrors = styled(
                             {
                               seriesName: t('Errors By Release'),
                               data: data.map(row => ({
-                                name: row.release.version,
+                                name: row.release.shortVersion,
                                 value: row.count,
                               })),
                             },
