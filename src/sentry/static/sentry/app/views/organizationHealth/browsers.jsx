@@ -85,6 +85,59 @@ const OrganizationHealthErrors = styled(
           </Flex>
 
           <Flex>
+            <HealthRequest tag="device" timeseries={false}>
+              {({data, loading}) => {
+                if (!data) return null;
+                return (
+                  <StyledPanelChart
+                    height={200}
+                    series={[
+                      {
+                        seriesName: t('Browsers'),
+                        data: data.map(([name, value]) => ({name, value})),
+                      },
+                    ]}
+                    title={t('Browsers')}
+                  >
+                    {({series}) => (
+                      <Flex>
+                        <PieChartWrapper>
+                          <PieChart height={300} series={series} />
+                        </PieChartWrapper>
+                      </Flex>
+                    )}
+                  </StyledPanelChart>
+                );
+              }}
+            </HealthRequest>
+            <HealthRequest tag="device.family" timeseries={false}>
+              {({data, loading}) => {
+                if (!data) return null;
+                return (
+                  <StyledPanelChart
+                    height={200}
+                    series={[
+                      {
+                        seriesName: t('OS'),
+                        data: data.map(([name, value]) => ({name, value})),
+                      },
+                    ]}
+                    title={t('OS')}
+                  >
+                    {({series}) => (
+                      <Flex>
+                        <PieChartWrapper>
+                          <PieChart height={300} series={series} />
+                        </PieChartWrapper>
+                      </Flex>
+                    )}
+                  </StyledPanelChart>
+                );
+              }}
+            </HealthRequest>
+          </Flex>
+
+          <Flex>
             <HealthRequest tag="browser.name" timeseries={false} topk={5}>
               {({data, originalData, loading}) => {
                 if (!data) return null;
@@ -187,6 +240,7 @@ const OrganizationHealthErrors = styled(
 const PieChartWrapper = styled(Box)`
   flex: 1;
   flex-shrink: 0;
+  width: 100%;
 `;
 class OrganizationHealthErrorsContainer extends React.Component {
   render() {
