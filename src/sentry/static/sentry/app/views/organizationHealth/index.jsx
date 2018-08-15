@@ -60,7 +60,8 @@ class OrganizationHealth extends React.Component {
     let {organization, children} = this.props;
 
     // TODO(billy): Is this what we want, only projects user is member of?
-    let projects = organization.projects.filter(({isMember}) => isMember);
+    let projects =
+      organization.projects && organization.projects.filter(({isMember}) => isMember);
 
     return (
       <Feature feature={['health']} renderNoFeatureMessage>
