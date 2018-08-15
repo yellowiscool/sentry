@@ -5,6 +5,7 @@ let validHookNames = new Set([
   'assistant:support-button',
   'component:org-members-view',
   'component:org-auth-view',
+  'experiment:sample-event',
   'footer',
   'settings:organization-navigation',
   'settings:organization-navigation-config',
