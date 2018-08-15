@@ -207,8 +207,43 @@ theme.button = {
   },
 };
 
+// palette generated via: https://gka.github.io/palettes/#colors=444674,69519A,E1567C,FB7D46,F2B712|steps=20|bez=1|coL=1
+const CHART_PALETTE = [
+  '#444674',
+  '#51497d',
+  '#5e4c83',
+  '#6f4e87',
+  '#7e5089',
+  '#8f5289',
+  '#9e5389',
+  '#af5587',
+  '#bf5584',
+  '#ce5681',
+  '#df567d',
+  '#e65e72',
+  '#ec6967',
+  '#f0735d',
+  '#f37f53',
+  '#f58a49',
+  '#f5953f',
+  '#f5a133',
+  '#f4ab26',
+  '#f2b712',
+];
+
 theme.charts = {
-  colors: ['#4C416B', '#7A5195', '#BC5090', '#EF5675', '#FF764A', '#FFA600'],
+  colors: CHART_PALETTE,
+
+  // Given the number of items in chart, we should return a corresponding palette gradient
+  getColorPalette: length => {
+    const paletteLength = CHART_PALETTE.length;
+    const spread = Math.floor(paletteLength / length);
+
+    return [...new Array(length)]
+      .map((val, i) => i + i * spread)
+      .map(index => CHART_PALETTE[index % paletteLength]);
+  },
+
   previousPeriod: theme.gray1,
 };
 
