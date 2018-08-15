@@ -10,6 +10,17 @@ class PieChart extends React.Component {
     ...BaseChart.propTypes,
   };
 
+  constructor(props) {
+    super(props);
+    this.chart = React.createRef();
+    this.isInitialSelected = true;
+    this.selected = 0;
+  }
+
+  componentDidMount() {
+    setTimeout(() => this.highlight(0), 1000);
+  }
+
   // echarts Legend does not have access to percentages (but tooltip does :/)
   getSeriesPercentages = series => {
     const total = series.data.reduce((acc, {value}) => acc + value, 0);
@@ -22,6 +33,25 @@ class PieChart extends React.Component {
         }),
         {}
       );
+  };
+  highlight = dataIndex => {
+    if (!this.chart.current) return;
+
+    this.chart.current.getEchartsInstance().dispatchAction({
+      type: 'highlight',
+      seriesIndex: 0,
+      dataIndex,
+    });
+  };
+
+  downplay = dataIndex => {
+    if (!this.chart.current) return;
+
+    this.chart.current.getEchartsInstance().dispatchAction({
+      type: 'downplay',
+      seriesIndex: 0,
+      dataIndex,
+    });
   };
 
   render() {
@@ -38,6 +68,32 @@ class PieChart extends React.Component {
 
     return (
       <BaseChart
+        ref={this.chart}
+        onChartReady={this.handleChartReady}
+        onEvents={{
+          // when legend highlights it does NOT pass dataIndex :(
+          highlight: ({name, ...args}) => {
+            if (
+              !this.isInitialSelected ||
+              !name ||
+              firstSeries.data[this.selected].name === name
+            )
+              return;
+
+            // Unhighlight if not initial "highlight" event and
+            // if name exists (i.e. not dispatched from cDM) and
+            // highlighted series name is different than the initially selected series name
+            this.downplay(this.selected);
+            this.isInitialSelected = false;
+          },
+
+          mouseover: ({dataIndex, ...args}) => {
+            if (!this.isInitialSelected) return;
+            if (dataIndex === this.selected) return;
+            this.downplay(this.selected);
+            this.isInitialSelected = false;
+          },
+        }}
         {...props}
         options={{
           legend: Legend({
@@ -60,7 +116,11 @@ class PieChart extends React.Component {
               avoidLabelOverlap: false,
               label: {
                 normal: {
-                  formatter: '{b}\n{d}%',
+                  formatter: ({name, percent, dataIndex, ...args}) => {
+                    // Need newline here
+                    return `${name}
+                    ${percent}%`;
+                  },
                   show: false,
                   position: 'center',
                 },
