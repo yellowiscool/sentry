@@ -11,6 +11,7 @@ import FieldFromConfig from 'app/views/settings/components/forms/fieldFromConfig
 import Form from 'app/views/settings/components/forms/form';
 import SentryTypes from 'app/sentryTypes';
 import {t} from 'app/locale';
+import AccordionButton from 'app/components/accordionButton';
 
 const MESSAGES_BY_ACTION = {
   link: t('Successfully linked issue.'),
@@ -29,6 +30,14 @@ class ExternalIssueForm extends AsyncComponent {
     action: PropTypes.oneOf(['link', 'create']),
     onSubmitSuccess: PropTypes.func.isRequired,
   };
+
+  constructor(props, context) {
+    super(props, context);
+
+    this.state = {
+      showAllFields: false,
+    };
+  }
 
   getEndpoints() {
     let {action, group, integration} = this.props;
@@ -139,13 +148,15 @@ class ExternalIssueForm extends AsyncComponent {
 
     return [
       ...fields.slice(0, cutoff),
-      <div
+      <AccordionButton
         key="-1"
-        onClick={() => this.setState({showAll: true})}
-        style={{color: 'blue'}}
+        count={fields.length - 3}
+        onClick={() => this.setState({showAllFields: !this.state.showAllFields})}
+        open={this.state.showAllFields}
+        style={{margin: '1em 0'}}
       >
-        {fields.length - 3} More Options
-      </div>,
+        {this.state.showAllFields ? 'Show Less Fields' : 'Show More Fields'}
+      </AccordionButton>,
       ...fields.slice(cutoff),
     ];
   };
@@ -180,7 +191,7 @@ class ExternalIssueForm extends AsyncComponent {
               key={field.name}
               field={field}
               inline={false}
-              visible={this.state.showAll || i <= cutoff - 1}
+              visible={this.state.showAllFields || i <= cutoff - 1}
               stacked
               flexibleControlStateSize
               {...this.getFieldProps(field)}
