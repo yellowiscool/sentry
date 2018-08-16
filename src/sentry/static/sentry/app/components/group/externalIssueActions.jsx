@@ -134,10 +134,28 @@ class ExternalIssueForm extends AsyncComponent {
         }
       : {};
 
+  addAccordionButton = (fields, cutoff) => {
+    if (fields.length < cutoff) return fields;
+
+    return [
+      ...fields.slice(0, cutoff),
+      <div
+        key="-1"
+        onClick={() => this.setState({showAll: true})}
+        style={{color: 'blue'}}
+      >
+        {fields.length - 3} More Options
+      </div>,
+      ...fields.slice(cutoff),
+    ];
+  };
+
   renderBody() {
     let {integrationDetails} = this.state;
     let {action, group, integration} = this.props;
     let config = integrationDetails[`${action}IssueConfig`];
+
+    let cutoff = 3; //number of fields to show before hiding in accordion view
 
     let initialData = {};
     config.forEach(field => {
@@ -156,16 +174,20 @@ class ExternalIssueForm extends AsyncComponent {
         submitLabel={SUBMIT_LABEL_BY_ACTION[action]}
         footerClass="modal-footer"
       >
-        {config.map(field => (
-          <FieldFromConfig
-            key={field.name}
-            field={field}
-            inline={false}
-            stacked
-            flexibleControlStateSize
-            {...this.getFieldProps(field)}
-          />
-        ))}
+        {this.addAccordionButton(
+          config.map((field, i) => (
+            <FieldFromConfig
+              key={field.name}
+              field={field}
+              inline={false}
+              visible={this.state.showAll || i <= cutoff - 1}
+              stacked
+              flexibleControlStateSize
+              {...this.getFieldProps(field)}
+            />
+          )),
+          cutoff
+        )}
       </Form>
     );
   }
