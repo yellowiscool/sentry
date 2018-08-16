@@ -144,7 +144,7 @@ class HealthRequestWithParams extends React.Component {
   };
 
   render() {
-    let {children} = this.props;
+    let {children, ...props} = this.props;
     let {data} = this.state;
 
     return children({
@@ -152,6 +152,9 @@ class HealthRequestWithParams extends React.Component {
       loading: data === null,
       data: this.transformData(data),
       originalData: data,
+
+      // sometimes we want to reference props that was given to HealthRequest
+      ...props,
     });
   }
 }

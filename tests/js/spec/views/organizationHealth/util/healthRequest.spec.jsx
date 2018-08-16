@@ -42,23 +42,31 @@ describe('HealthRequest', function() {
     });
 
     it('makes requests', async function() {
-      expect(mock).toHaveBeenCalledWith({loading: true, data: null, originalData: null});
+      expect(mock).toHaveBeenCalledWith(
+        expect.objectContaining({
+          loading: true,
+          data: null,
+          originalData: null,
+        })
+      );
 
-      expect(mock).toHaveBeenLastCalledWith({
-        loading: false,
-        data: [
-          {
-            seriesName: 'release-name',
-            data: [
-              expect.objectContaining({
-                name: expect.anything(),
-                value: 123,
-              }),
-            ],
-          },
-        ],
-        originalData: [[expect.anything(), expect.anything()]],
-      });
+      expect(mock).toHaveBeenLastCalledWith(
+        expect.objectContaining({
+          loading: false,
+          data: [
+            {
+              seriesName: 'release-name',
+              data: [
+                expect.objectContaining({
+                  name: expect.anything(),
+                  value: 123,
+                }),
+              ],
+            },
+          ],
+          originalData: [[expect.anything(), expect.anything()]],
+        })
+      );
 
       expect(doHealthRequest).toHaveBeenCalled();
     });
@@ -133,21 +141,23 @@ describe('HealthRequest', function() {
     );
     await tick();
     wrapper.update();
-    expect(mock).toHaveBeenLastCalledWith({
-      loading: false,
-      data: [
-        {
-          seriesName: 'release-slug',
-          data: [
-            expect.objectContaining({
-              name: expect.anything(),
-              value: 123,
-            }),
-          ],
-        },
-      ],
-      originalData: [[expect.anything(), expect.anything()]],
-    });
+    expect(mock).toHaveBeenLastCalledWith(
+      expect.objectContaining({
+        loading: false,
+        data: [
+          {
+            seriesName: 'release-slug',
+            data: [
+              expect.objectContaining({
+                name: expect.anything(),
+                value: 123,
+              }),
+            ],
+          },
+        ],
+        originalData: [[expect.anything(), expect.anything()]],
+      })
+    );
   });
 
   it('transforms data for non-timeseries response', async function() {
@@ -171,10 +181,12 @@ describe('HealthRequest', function() {
     );
     await tick();
     wrapper.update();
-    expect(mock).toHaveBeenLastCalledWith({
-      loading: false,
-      data: [['release-name', 123]],
-      originalData: [{count: 123, release: 'release-name'}],
-    });
+    expect(mock).toHaveBeenLastCalledWith(
+      expect.objectContaining({
+        loading: false,
+        data: [['release-name', 123]],
+        originalData: [{count: 123, release: 'release-name'}],
+      })
+    );
   });
 });
