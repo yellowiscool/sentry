@@ -291,7 +291,12 @@ export const TableChart = styled(
 
       // If we need to calculate totals...
       let dataTotals =
-        showRowTotal || showColumnTotal || shadeRowPercentage ? this.getTotals(data) : [];
+        showRowTotal || showColumnTotal || shadeRowPercentage
+          ? this.getTotals(data)
+          : {
+              rowTotals: [],
+              columnTotals: [],
+            };
       let dataMaybeWithTotals = this.getDataWithTotals(dataTotals);
 
       // For better render customization
