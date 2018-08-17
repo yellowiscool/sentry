@@ -38,18 +38,16 @@ exports[`RadioBooleanField render() renders new field without form context 1`] =
           inline={true}
         >
           <Component
-            className="css-1d3ztk9-FieldWrapper-inlineStyle etqqcs20"
-            hasControlState={true}
-            inline={true}
+            className="css-1xtb51p-FieldWrapper-getPadding-borderStyle-inlineStyle etqqcs20"
           >
             <Flex
-              className="css-1d3ztk9-FieldWrapper-inlineStyle etqqcs20"
+              className="css-1xtb51p-FieldWrapper-getPadding-borderStyle-inlineStyle etqqcs20"
             >
               <Base
-                className="etqqcs20 css-unzoax-FieldWrapper-inlineStyle"
+                className="etqqcs20 css-rbbyml-FieldWrapper-getPadding-borderStyle-inlineStyle"
               >
                 <div
-                  className="etqqcs20 css-unzoax-FieldWrapper-inlineStyle"
+                  className="etqqcs20 css-rbbyml-FieldWrapper-getPadding-borderStyle-inlineStyle"
                   is={null}
                 >
                   <FieldControl

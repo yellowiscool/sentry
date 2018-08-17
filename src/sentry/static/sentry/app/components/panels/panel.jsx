@@ -36,4 +36,3 @@ Panel.propTypes = {
 };
 
 export default Panel;
-export {StyledPanel};
