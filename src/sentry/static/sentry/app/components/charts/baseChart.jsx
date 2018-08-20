@@ -81,7 +81,7 @@ class BaseChart extends React.Component {
     // so that we can scale our palette
     //
     // get length of `data` in the first series
-    let {series} = this.props.options || {};
+    let {series} = this.props.options;
     let [firstSeries] = series || [];
     let {data} = firstSeries || {};
     return data && data.length
