@@ -205,7 +205,7 @@ exports[`ProjectPluginDetails renders 1`] = `
                             >
                               <Component
                                 aria-label="Enable Plugin"
-                                className="css-dkprmi-StyledButton-getColors e17811v30"
+                                className="css-dkprmi-StyledButton-getColors eqrebog0"
                                 disabled={false}
                                 onClick={[Function]}
                                 role="button"
@@ -218,7 +218,7 @@ exports[`ProjectPluginDetails renders 1`] = `
                               >
                                 <button
                                   aria-label="Enable Plugin"
-                                  className="css-dkprmi-StyledButton-getColors e17811v30"
+                                  className="css-dkprmi-StyledButton-getColors eqrebog0"
                                   disabled={false}
                                   onClick={[Function]}
                                   role="button"
@@ -233,21 +233,21 @@ exports[`ProjectPluginDetails renders 1`] = `
                                     size="small"
                                   >
                                     <Component
-                                      className="css-19bmqb3-ButtonLabel e17811v31"
+                                      className="css-19bmqb3-ButtonLabel eqrebog1"
                                       size="small"
                                     >
                                       <Flex
                                         align="center"
-                                        className="css-19bmqb3-ButtonLabel e17811v31"
+                                        className="css-19bmqb3-ButtonLabel eqrebog1"
                                         size="small"
                                       >
                                         <Base
                                           align="center"
-                                          className="e17811v31 css-1eblpyp-ButtonLabel"
+                                          className="eqrebog1 css-1eblpyp-ButtonLabel"
                                           size="small"
                                         >
                                           <div
-                                            className="e17811v31 css-1eblpyp-ButtonLabel"
+                                            className="eqrebog1 css-1eblpyp-ButtonLabel"
                                             is={null}
                                             size="small"
                                           >
@@ -275,7 +275,7 @@ exports[`ProjectPluginDetails renders 1`] = `
                             >
                               <Component
                                 aria-label="Reset Configuration"
-                                className="css-dkprmi-StyledButton-getColors e17811v30"
+                                className="css-dkprmi-StyledButton-getColors eqrebog0"
                                 disabled={false}
                                 onClick={[Function]}
                                 role="button"
@@ -283,7 +283,7 @@ exports[`ProjectPluginDetails renders 1`] = `
                               >
                                 <button
                                   aria-label="Reset Configuration"
-                                  className="css-dkprmi-StyledButton-getColors e17811v30"
+                                  className="css-dkprmi-StyledButton-getColors eqrebog0"
                                   disabled={false}
                                   onClick={[Function]}
                                   role="button"
@@ -293,21 +293,21 @@ exports[`ProjectPluginDetails renders 1`] = `
                                     size="small"
                                   >
                                     <Component
-                                      className="css-19bmqb3-ButtonLabel e17811v31"
+                                      className="css-19bmqb3-ButtonLabel eqrebog1"
                                       size="small"
                                     >
                                       <Flex
                                         align="center"
-                                        className="css-19bmqb3-ButtonLabel e17811v31"
+                                        className="css-19bmqb3-ButtonLabel eqrebog1"
                                         size="small"
                                       >
                                         <Base
                                           align="center"
-                                          className="e17811v31 css-1eblpyp-ButtonLabel"
+                                          className="eqrebog1 css-1eblpyp-ButtonLabel"
                                           size="small"
                                         >
                                           <div
-                                            className="e17811v31 css-1eblpyp-ButtonLabel"
+                                            className="eqrebog1 css-1eblpyp-ButtonLabel"
                                             is={null}
                                             size="small"
                                           >

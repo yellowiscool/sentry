@@ -254,7 +254,7 @@ exports[`ConfirmDelete renders 1`] = `
             >
               <Component
                 aria-label="Cancel"
-                className="css-cmo08-StyledButton-getColors e17811v30"
+                className="css-cmo08-StyledButton-getColors eqrebog0"
                 disabled={false}
                 onClick={[Function]}
                 role="button"
@@ -266,7 +266,7 @@ exports[`ConfirmDelete renders 1`] = `
               >
                 <button
                   aria-label="Cancel"
-                  className="css-cmo08-StyledButton-getColors e17811v30"
+                  className="css-cmo08-StyledButton-getColors eqrebog0"
                   disabled={false}
                   onClick={[Function]}
                   role="button"
@@ -278,18 +278,18 @@ exports[`ConfirmDelete renders 1`] = `
                 >
                   <ButtonLabel>
                     <Component
-                      className="css-1dxlw1i-ButtonLabel e17811v31"
+                      className="css-1dxlw1i-ButtonLabel eqrebog1"
                     >
                       <Flex
                         align="center"
-                        className="css-1dxlw1i-ButtonLabel e17811v31"
+                        className="css-1dxlw1i-ButtonLabel eqrebog1"
                       >
                         <Base
                           align="center"
-                          className="e17811v31 css-mvnt76-ButtonLabel"
+                          className="eqrebog1 css-mvnt76-ButtonLabel"
                         >
                           <div
-                            className="e17811v31 css-mvnt76-ButtonLabel"
+                            className="eqrebog1 css-mvnt76-ButtonLabel"
                             is={null}
                           >
                             Cancel
@@ -323,7 +323,7 @@ exports[`ConfirmDelete renders 1`] = `
               <Component
                 aria-label="Confirm"
                 autoFocus={true}
-                className="css-fn4jle-StyledButton-getColors e17811v30"
+                className="css-fn4jle-StyledButton-getColors eqrebog0"
                 data-test-id="confirm-modal"
                 disabled={true}
                 href={null}
@@ -335,7 +335,7 @@ exports[`ConfirmDelete renders 1`] = `
                 <button
                   aria-label="Confirm"
                   autoFocus={true}
-                  className="css-fn4jle-StyledButton-getColors e17811v30"
+                  className="css-fn4jle-StyledButton-getColors eqrebog0"
                   data-test-id="confirm-modal"
                   disabled={true}
                   href={null}
@@ -346,18 +346,18 @@ exports[`ConfirmDelete renders 1`] = `
                 >
                   <ButtonLabel>
                     <Component
-                      className="css-1dxlw1i-ButtonLabel e17811v31"
+                      className="css-1dxlw1i-ButtonLabel eqrebog1"
                     >
                       <Flex
                         align="center"
-                        className="css-1dxlw1i-ButtonLabel e17811v31"
+                        className="css-1dxlw1i-ButtonLabel eqrebog1"
                       >
                         <Base
                           align="center"
-                          className="e17811v31 css-mvnt76-ButtonLabel"
+                          className="eqrebog1 css-mvnt76-ButtonLabel"
                         >
                           <div
-                            className="e17811v31 css-mvnt76-ButtonLabel"
+                            className="eqrebog1 css-mvnt76-ButtonLabel"
                             is={null}
                           >
                             Confirm

@@ -417,7 +417,7 @@ exports[`Issues -> Merged View renders with mocked data 1`] = `
                           >
                             <Component
                               aria-label="Compare"
-                              className="css-1rcxqx1-StyledButton-getColors e17811v30"
+                              className="css-1rcxqx1-StyledButton-getColors eqrebog0"
                               disabled={true}
                               href={null}
                               onClick={[Function]}
@@ -432,7 +432,7 @@ exports[`Issues -> Merged View renders with mocked data 1`] = `
                             >
                               <button
                                 aria-label="Compare"
-                                className="css-1rcxqx1-StyledButton-getColors e17811v30"
+                                className="css-1rcxqx1-StyledButton-getColors eqrebog0"
                                 disabled={true}
                                 href={null}
                                 onClick={[Function]}
@@ -449,21 +449,21 @@ exports[`Issues -> Merged View renders with mocked data 1`] = `
                                   size="small"
                                 >
                                   <Component
-                                    className="css-19bmqb3-ButtonLabel e17811v31"
+                                    className="css-19bmqb3-ButtonLabel eqrebog1"
                                     size="small"
                                   >
                                     <Flex
                                       align="center"
-                                      className="css-19bmqb3-ButtonLabel e17811v31"
+                                      className="css-19bmqb3-ButtonLabel eqrebog1"
                                       size="small"
                                     >
                                       <Base
                                         align="center"
-                                        className="e17811v31 css-1eblpyp-ButtonLabel"
+                                        className="eqrebog1 css-1eblpyp-ButtonLabel"
                                         size="small"
                                       >
                                         <div
-                                          className="e17811v31 css-1eblpyp-ButtonLabel"
+                                          className="eqrebog1 css-1eblpyp-ButtonLabel"
                                           is={null}
                                           size="small"
                                         >
@@ -504,7 +504,7 @@ exports[`Issues -> Merged View renders with mocked data 1`] = `
                           >
                             <Component
                               aria-label="Collapse All"
-                              className="toggle-collapse-all css-dkprmi-StyledButton-getColors e17811v30"
+                              className="toggle-collapse-all css-dkprmi-StyledButton-getColors eqrebog0"
                               disabled={false}
                               onClick={[Function]}
                               role="button"
@@ -512,7 +512,7 @@ exports[`Issues -> Merged View renders with mocked data 1`] = `
                             >
                               <button
                                 aria-label="Collapse All"
-                                className="toggle-collapse-all css-dkprmi-StyledButton-getColors e17811v30"
+                                className="toggle-collapse-all css-dkprmi-StyledButton-getColors eqrebog0"
                                 disabled={false}
                                 onClick={[Function]}
                                 role="button"
@@ -522,21 +522,21 @@ exports[`Issues -> Merged View renders with mocked data 1`] = `
                                   size="small"
                                 >
                                   <Component
-                                    className="css-19bmqb3-ButtonLabel e17811v31"
+                                    className="css-19bmqb3-ButtonLabel eqrebog1"
                                     size="small"
                                   >
                                     <Flex
                                       align="center"
-                                      className="css-19bmqb3-ButtonLabel e17811v31"
+                                      className="css-19bmqb3-ButtonLabel eqrebog1"
                                       size="small"
                                     >
                                       <Base
                                         align="center"
-                                        className="e17811v31 css-1eblpyp-ButtonLabel"
+                                        className="eqrebog1 css-1eblpyp-ButtonLabel"
                                         size="small"
                                       >
                                         <div
-                                          className="e17811v31 css-1eblpyp-ButtonLabel"
+                                          className="eqrebog1 css-1eblpyp-ButtonLabel"
                                           is={null}
                                           size="small"
                                         >
@@ -1882,7 +1882,7 @@ exports[`Issues -> Merged View renders with mocked data 2`] = `
                           >
                             <Component
                               aria-label="Compare"
-                              className="css-1rcxqx1-StyledButton-getColors e17811v30"
+                              className="css-1rcxqx1-StyledButton-getColors eqrebog0"
                               disabled={true}
                               href={null}
                               onClick={[Function]}
@@ -1897,7 +1897,7 @@ exports[`Issues -> Merged View renders with mocked data 2`] = `
                             >
                               <button
                                 aria-label="Compare"
-                                className="css-1rcxqx1-StyledButton-getColors e17811v30"
+                                className="css-1rcxqx1-StyledButton-getColors eqrebog0"
                                 disabled={true}
                                 href={null}
                                 onClick={[Function]}
@@ -1914,21 +1914,21 @@ exports[`Issues -> Merged View renders with mocked data 2`] = `
                                   size="small"
                                 >
                                   <Component
-                                    className="css-19bmqb3-ButtonLabel e17811v31"
+                                    className="css-19bmqb3-ButtonLabel eqrebog1"
                                     size="small"
                                   >
                                     <Flex
                                       align="center"
-                                      className="css-19bmqb3-ButtonLabel e17811v31"
+                                      className="css-19bmqb3-ButtonLabel eqrebog1"
                                       size="small"
                                     >
                                       <Base
                                         align="center"
-                                        className="e17811v31 css-1eblpyp-ButtonLabel"
+                                        className="eqrebog1 css-1eblpyp-ButtonLabel"
                                         size="small"
                                       >
                                         <div
-                                          className="e17811v31 css-1eblpyp-ButtonLabel"
+                                          className="eqrebog1 css-1eblpyp-ButtonLabel"
                                           is={null}
                                           size="small"
                                         >
@@ -1969,7 +1969,7 @@ exports[`Issues -> Merged View renders with mocked data 2`] = `
                           >
                             <Component
                               aria-label="Collapse All"
-                              className="toggle-collapse-all css-dkprmi-StyledButton-getColors e17811v30"
+                              className="toggle-collapse-all css-dkprmi-StyledButton-getColors eqrebog0"
                               disabled={false}
                               onClick={[Function]}
                               role="button"
@@ -1977,7 +1977,7 @@ exports[`Issues -> Merged View renders with mocked data 2`] = `
                             >
                               <button
                                 aria-label="Collapse All"
-                                className="toggle-collapse-all css-dkprmi-StyledButton-getColors e17811v30"
+                                className="toggle-collapse-all css-dkprmi-StyledButton-getColors eqrebog0"
                                 disabled={false}
                                 onClick={[Function]}
                                 role="button"
@@ -1987,21 +1987,21 @@ exports[`Issues -> Merged View renders with mocked data 2`] = `
                                   size="small"
                                 >
                                   <Component
-                                    className="css-19bmqb3-ButtonLabel e17811v31"
+                                    className="css-19bmqb3-ButtonLabel eqrebog1"
                                     size="small"
                                   >
                                     <Flex
                                       align="center"
-                                      className="css-19bmqb3-ButtonLabel e17811v31"
+                                      className="css-19bmqb3-ButtonLabel eqrebog1"
                                       size="small"
                                     >
                                       <Base
                                         align="center"
-                                        className="e17811v31 css-1eblpyp-ButtonLabel"
+                                        className="eqrebog1 css-1eblpyp-ButtonLabel"
                                         size="small"
                                       >
                                         <div
-                                          className="e17811v31 css-1eblpyp-ButtonLabel"
+                                          className="eqrebog1 css-1eblpyp-ButtonLabel"
                                           is={null}
                                           size="small"
                                         >

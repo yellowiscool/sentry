@@ -2,7 +2,7 @@ import React from 'react';
 import Reflux from 'reflux';
 import createReactClass from 'create-react-class';
 import styled from 'react-emotion';
-import Button from 'app/components/buttons/button';
+import Button from 'app/components/button';
 import GuideStore from 'app/stores/guideStore';
 import {t} from 'app/locale';
 import {

@@ -6,7 +6,7 @@ import {browserHistory} from 'react-router';
 
 import {addErrorMessage} from 'app/actionCreators/indicator';
 import {t} from 'app/locale';
-import Button from 'app/components/buttons/button';
+import Button from 'app/components/button';
 import HeaderSeparator from 'app/components/organizations/headerSeparator';
 import MultiSelectField from 'app/components/forms/multiSelectField';
 import MultipleProjectSelector from 'app/components/organizations/multipleProjectSelector';

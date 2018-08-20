@@ -3,7 +3,7 @@ import React from 'react';
 
 import {t} from 'app/locale';
 import AddIntegration from 'app/views/organizationIntegrations/addIntegration';
-import Button from 'app/components/buttons/button';
+import Button from 'app/components/button';
 import Tooltip from 'app/components/tooltip';
 
 export default class AddIntegrationButton extends React.Component {
@@ -16,10 +16,16 @@ export default class AddIntegrationButton extends React.Component {
 
   render() {
     // eslint-disable-next-line no-unused-vars
-    const {provider, buttonText, onAddIntegration, reinstall, ...buttonProps} = this.props;
+    const {
+      provider,
+      buttonText,
+      onAddIntegration,
+      reinstall,
+      ...buttonProps
+    } = this.props;
 
-    const label = buttonText ||
-      t(reinstall ? 'Enable' : 'Add %s', provider.metadata.noun);
+    const label =
+      buttonText || t(reinstall ? 'Enable' : 'Add %s', provider.metadata.noun);
 
     return (
       <Tooltip
