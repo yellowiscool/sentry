@@ -149,6 +149,7 @@ class GroupIntegrationDetailsEndpoint(GroupEndpoint):
             defaults={
                 'title': data.get('title'),
                 'description': data.get('description'),
+                'metadata': data.get('metadata'),
             }
         )
 
