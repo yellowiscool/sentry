@@ -2007,20 +2007,20 @@ exports[`OrganizationIntegrations render() with installed integrations Displays 
                                                             size="xsmall"
                                                           >
                                                             <Component
-                                                              className="css-1jxtush-Icon e17811v32"
+                                                              className="css-1vdnsie-Icon e17811v32"
                                                               hasChildren={true}
                                                               size="xsmall"
                                                             >
                                                               <Box
-                                                                className="css-1jxtush-Icon e17811v32"
+                                                                className="css-1vdnsie-Icon e17811v32"
                                                                 size="xsmall"
                                                               >
                                                                 <Base
-                                                                  className="e17811v32 css-md8goh-Icon"
+                                                                  className="e17811v32 css-nk081r-Icon"
                                                                   size="xsmall"
                                                                 >
                                                                   <div
-                                                                    className="e17811v32 css-md8goh-Icon"
+                                                                    className="e17811v32 css-nk081r-Icon"
                                                                     is={null}
                                                                     size="xsmall"
                                                                   >
