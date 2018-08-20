@@ -1,3 +1,5 @@
+import CHART_PALETTE from 'app/constants/chartPalette';
+
 const theme = {
   breakpoints: ['768px', '992px', '1200px'],
 
@@ -207,42 +209,11 @@ theme.button = {
   },
 };
 
-// palette generated via: https://gka.github.io/palettes/#colors=444674,69519A,E1567C,FB7D46,F2B712|steps=20|bez=1|coL=1
-const CHART_PALETTE = [
-  '#444674',
-  '#51497d',
-  '#5e4c83',
-  '#6f4e87',
-  '#7e5089',
-  '#8f5289',
-  '#9e5389',
-  '#af5587',
-  '#bf5584',
-  '#ce5681',
-  '#df567d',
-  '#e65e72',
-  '#ec6967',
-  '#f0735d',
-  '#f37f53',
-  '#f58a49',
-  '#f5953f',
-  '#f5a133',
-  '#f4ab26',
-  '#f2b712',
-];
-
 theme.charts = {
-  colors: CHART_PALETTE,
+  colors: CHART_PALETTE[CHART_PALETTE.length - 1],
 
-  // Given the number of items in chart, we should return a corresponding palette gradient
-  getColorPalette: length => {
-    const paletteLength = CHART_PALETTE.length;
-    const spread = Math.floor(paletteLength / length);
-
-    return [...new Array(length)]
-      .map((val, i) => i + i * spread)
-      .map(index => CHART_PALETTE[index % paletteLength]);
-  },
+  // We have an array that maps `number + 1` --> list of `number` colors
+  getColorPalette: length => CHART_PALETTE[length + 1],
 
   previousPeriod: theme.gray1,
 };
