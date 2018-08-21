@@ -56,7 +56,8 @@ _snuba_pool = urllib3.connectionpool.connection_from_url(
 
 def raw_query(start, end, groupby=None, conditions=None, filter_keys=None,
               aggregations=None, rollup=None, arrayjoin=None, limit=None, orderby=None,
-              having=None, referrer=None, is_grouprelease=False, selected_columns=None,):
+              having=None, referrer=None, is_grouprelease=False, selected_columns=None,
+              totals=False,):
     """
     Sends a query to snuba.
 
@@ -146,6 +147,7 @@ def raw_query(start, end, groupby=None, conditions=None, filter_keys=None,
         'limit': limit,
         'orderby': orderby,
         'selected_columns': selected_columns,
+        'totals': totals,
     }) if v is not None}
 
     headers = {}
