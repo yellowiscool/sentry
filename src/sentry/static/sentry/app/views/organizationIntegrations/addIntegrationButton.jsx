@@ -15,7 +15,6 @@ export default class AddIntegrationButton extends React.Component {
   };
 
   render() {
-    // eslint-disable-next-line no-unused-vars
     const {
       provider,
       buttonText,
@@ -33,7 +32,7 @@ export default class AddIntegrationButton extends React.Component {
         title={`Integration cannot be added on Sentry. Enable this integration via the ${provider.name} instance.`}
       >
         <span>
-          <AddIntegration provider={provider} onInstall={this.props.onAddIntegration}>
+          <AddIntegration provider={provider} onInstall={onAddIntegration}>
             {onClick => (
               <Button {...buttonProps} disabled={!provider.canAdd} onClick={onClick}>
                 {label}
