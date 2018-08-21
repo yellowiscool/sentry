@@ -273,3 +273,18 @@ class ReleaseSerializer(Serializer):
             'lastEvent': attrs.get('last_seen'),
         }
         return d
+
+
+class LightReleaseSerializer(Serializer):
+    def serialize(self, obj, attrs, user, *args, **kwargs):
+        return {
+            'version': obj.version,
+            'shortVersion': obj.short_version,
+            'ref': obj.ref,
+            'url': obj.url,
+            'dateReleased': obj.date_released,
+            'dateCreated': obj.date_added,
+            'data': obj.data,
+            'commitCount': obj.commit_count,
+            'deployCount': obj.total_deploys,
+        }

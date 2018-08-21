@@ -4,12 +4,13 @@ from django.db import IntegrityError, transaction
 
 from rest_framework.response import Response
 
-from .project_releases import ReleaseSerializer
+from .project_releases import ReleaseSerializer as _ReleaseSerializer
 from sentry.api.base import DocSection, EnvironmentMixin
 from sentry.api.bases.organization import OrganizationReleasesBaseEndpoint
 from sentry.api.exceptions import InvalidRepository
 from sentry.api.paginator import OffsetPaginator
 from sentry.api.serializers import serialize
+from sentry.api.serializers.models.release import ReleaseSerializer, LightReleaseSerializer
 from sentry.api.serializers.rest_framework import (
     ReleaseHeadCommitSerializer, ReleaseHeadCommitSerializerDeprecated, ListField
 )
@@ -36,7 +37,7 @@ def list_org_releases_scenario(runner):
     runner.request(method='GET', path='/organizations/%s/releases/' % (runner.org.slug, ))
 
 
-class ReleaseSerializerWithProjects(ReleaseSerializer):
+class ReleaseSerializerWithProjects(_ReleaseSerializer):
     projects = ListField()
     headCommits = ListField(
         child=ReleaseHeadCommitSerializerDeprecated(),
@@ -65,6 +66,8 @@ class OrganizationReleasesEndpoint(OrganizationReleasesBaseEndpoint, Environment
                               "starts with" filter for the version.
         """
         query = request.GET.get('query')
+        project_ids = set(map(int, request.GET.getlist('project')))
+        light = 'light' in request.GET
         try:
             environment = self._get_environment_from_request(
                 request,
@@ -89,16 +92,26 @@ class OrganizationReleasesEndpoint(OrganizationReleasesBaseEndpoint, Environment
                 version__istartswith=query,
             )
 
+        if project_ids:
+            queryset = queryset.filter(
+                projects__id__in=project_ids,
+            )
+
         queryset = queryset.extra(select={
             'sort': 'COALESCE(date_released, date_added)',
         })
+
+        if light:
+            serializer_cls = LightReleaseSerializer
+        else:
+            serializer_cls = ReleaseSerializer
 
         return self.paginate(
             request=request,
             queryset=queryset,
             order_by='-sort',
             paginator_cls=OffsetPaginator,
-            on_results=lambda x: serialize(x, request.user),
+            on_results=lambda x: serialize(x, request.user, serializer=serializer_cls()),
         )
 
     @attach_scenarios([create_new_org_release_scenario])
